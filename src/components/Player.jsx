@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 export default function Player() {
-  const [playerName, setPlayerName] = useState(null);
+  const [playerName, setPlayerName] = useState("");
   const [submitName, setSubmitName] = useState(false);
-
-  function handleClick(name) {
-    submitName(true);
-  }
 
   function handleChange(event) {
     setPlayerName(event.target.value);
+  }
+
+  function handleClick() {
+    setSubmitName(true);
   }
 
   return (
