@@ -1,4 +1,5 @@
 import Player from "./components/Player.jsx";
+import ResultModal from "./components/ResultsModal.jsx";
 import TimerChallenge from "./components/TimerChallenge.jsx";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <TimerChallenge title="Not easy" targetTime={5} />
         <TimerChallenge title="Getting tough" targetTime={10} />
         <TimerChallenge title="Pros only" targetTime={15} />
+        <ResultModal result="You lost" />
       </div>
     </>
   );
